@@ -10,10 +10,7 @@ Animal shelters face challenges with overcrowding, limited resources, and high r
 
 In 2023 alone, California and Texas euthanized over 40,000 dogs due to high rates of animal surrender, overcrowded shelters, and insufficient funding, as seen in chart below:
 
-###  Dog Euthanasia in 2023
 ![Dog Euthanasia](dog%202023%20euthanased.jpeg)
-
-
 
 **Main Goals:**
 - Determine which features (age, breed, species, etc.) most influence adoption outcomes
