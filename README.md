@@ -13,40 +13,44 @@ Animal shelters face challenges with overcrowding, limited resources, and high r
 - Predict the likelihood of adoption using machine learning models
 - Provide actionable insights for shelters to optimize their adoption processes
 
-  ##  Tools & Technologies
+ ##  Tools & Technologies
 
 - **Languages**: R
 
-  ## 📂 Dataset Description
+ ##  Dataset Description
 
-This project uses real-world animal shelter data to uncover patterns in pet adoption outcomes. The dataset was obtained from [Shelter Pet Data Alliance](https://www.shelterpetdata.org/) and contains detailed intake and outcome records from a municipal shelter.
+This project uses real-world animal shelter data to uncover patterns in pet adoption outcomes. The dataset was obtained from [Shelter Pet Data Alliance](https://www.shelterpetdata.org/) and contains detailed intake and outcome records from a municipal shelter. The data is collected by shelters across the country and is updated on the 13th of each month.
 
-###  Key Columns in the Dataset
 
-- `speciesname` – Animal species (e.g., Dog, Cat, Rabbit)
-- `breedname` – Breed or breed mix
-- `age_years` – Age at intake (in years)
-- `sexname` – Sex of the animal (Male, Female, Unknown)
-- `intakereason` – Reason for intake (Owner surrender, Stray, etc.)
-- `movementtype` – Outcome (Adopted, Returned, Euthanized)
-- `movementdate` – Outcome date
-- `istransfer` – Boolean indicating if animal was transferred
-- `sheltercode` – Shelter identifier
-- `animalname` – Name if assigned
+##  Dataset Schema
 
-###  Database Structure
 
-While the project uses a single flat CSV file, it reflects the structure of a normalized relational database. In production, this data would likely be split into related tables:
+| **Column**           | **Description**                                                 |
+|----------------------|-----------------------------------------------------------------|
+| `id`                 | Unique animal intake ID                                         |
+| `intakedate`         | Date animal entered the shelter                                 |
+| `intakereason`       | Reason for intake (e.g., Moving, Abandoned)                     |
+| `istransfer`         | 1 if animal was transferred from another facility               |
+| `sheltercode`        | Internal shelter code                                           |
+| `identichipnumber`   | Microchip or unique ID                                          |
+| `animalname`         | Name of the animal                                              |
+| `breedname`          | Animal's breed                                                  |
+| `basecolour`         | Base color of the animal                                        |
+| `speciesname`        | Cat or Dog                                                      |
+| `animalage`          | Age at time of intake                                           |
+| `sexname`            | Sex (e.g., Male, Female)                                        |
+| `location`           | Area of the shelter the animal was housed in                   |
+| `movementdate`       | Date the animal left the shelter or moved within it            |
+| `movementtype`       | Type of movement (Adoption, Foster, etc.)                       |
+| `istrial`            | Indicates if the movement was part of a trial                   |
+| `returndate`         | If returned, the date they were returned                        |
+| `returnedreason`     | Reason for return (if applicable)                               |
+| `deceaseddate`       | Date of death (if applicable)                                   |
+| `deceasedreason`     | Reason for death (e.g., died in care)                           |
+| `diedoffshelter`     | 1 if death occurred off-shelter                                 |
+| `puttosleep`         | 1 if euthanized                                                 |
+| `isdoa`              | 1 if dead on arrival                                            |
 
-- `animals`: Static info like species, age, and breed
-- `intakes`: Each intake event (reason, date, source)
-- `outcomes`: Each outcome event (type, date)
-- `shelters`: Shelter metadata
-
-This structure enables queries such as:
-- Adoption rates by breed and age
-- Return rates by intake reason
-- Time-in-shelter by species or outcome type
 
 ###  [Click here to view the dataset](animal-data-1.csv)
 
