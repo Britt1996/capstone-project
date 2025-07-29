@@ -8,6 +8,13 @@ This project analyzes shelter animal intake and outcome data to identify the key
 
 Animal shelters face challenges with overcrowding, limited resources, and high return rates. This project explores patterns in adoption outcomes by analyzing structured data on animal characteristics, intake reasons, and movement types(adopted/ notadopted).
 
+In 2023 alone, California and Texas euthanized over 40,000 dogs due to high rates of animal surrender, overcrowded shelters, and insufficient funding, as seen in chart below:
+
+###  Dog Euthanasia in 2023
+![Dog Euthanasia](dog%202023%20euthanased.jpeg)
+
+
+
 **Main Goals:**
 - Determine which features (age, breed, species, etc.) most influence adoption outcomes
 - Predict the likelihood of adoption using machine learning models
@@ -54,7 +61,7 @@ This project uses real-world animal shelter data to uncover patterns in pet adop
 
 ###  [Click here to view the dataset](animal-data-1.csv)
 
-
+### Results
 
 ###  Top 10 Adopted Dog Breeds
 ![Top 10 Adopted Dog Breeds](adopted%20dog%20breeds.jpeg)
@@ -74,10 +81,8 @@ This project uses real-world animal shelter data to uncover patterns in pet adop
 ###  Return Reasons for Returned Pets
 ![Return Reasons](return%20final.jpeg)
 
-###  Dog Euthanasia in 2023
-![Dog Euthanasia](dog%202023%20euthanased.jpeg)
 
-### ♂ Adoption Likelihood by Gender
+### Adoption Likelihood by Gender
 ![Adoption by Gender](gender.jpeg)
 
 ###  Most Popular Dog Breeds in Shelter
