@@ -1,7 +1,17 @@
-# capstone-project
+#  Pet Adoption Analysis: Uncovering Patterns in Shelter Outcomes
 
+This project analyzes shelter animal intake and outcome data to identify the key factors that influence whether an animal gets adopted. Using logistic regression, decision trees, and random forest models, it reveals patterns that can help shelters improve adoption strategies and reduce return rates.
 
+---
 
+##  Project Summary
+
+Animal shelters face challenges with overcrowding, limited resources, and high return rates. This project explores patterns in adoption outcomes by analyzing structured data on animal characteristics, intake reasons, and movement types.
+
+**Main Goals:**
+- Determine which features (age, breed, species, etc.) most influence adoption outcomes
+- Predict the likelihood of adoption using machine learning models
+- Provide actionable insights for shelters to optimize their adoption processes
 
 
 ###  Top 10 Adopted Dog Breeds
