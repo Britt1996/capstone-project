@@ -17,13 +17,28 @@ In 2023 alone, California and Texas euthanized over 40,000 dogs due to high rate
 - Predict the likelihood of adoption using machine learning models
 - Provide actionable insights for shelters to optimize their adoption processes
 
- ##  Dataset and Cleaning 
+  
+##  Project Overview
 
-This project uses real-world animal shelter data to uncover patterns in pet adoption outcomes. The dataset was obtained from [Shelter Pet Data Alliance](https://www.shelterpetdata.org/) and contains detailed intake and outcome records from a municipal shelter. The data is collected by shelters across the country and is updated on the 13th of each month.
+- Focused on **dogs only**
+- Cleaned and preprocessed over 30,000 records
+- Explored variables like breed, age, sex, intake reason, and adoption outcome
+- Built predictive models (logistic regression, decision tree, random forest)
+- Created visualizations to communicate trends and actionable insights
+
+
 
 # Language 
-R wa primarlity used in cleaning and manipulating the dataset
+R was primarlity used in cleaning and manipulating the dataset
 
+
+##  Data Source
+
+- Shelter Pet Data Alliance  
+- Nationwide data, updated monthly  
+- Uploaded directly by U.S. shelters
+
+  ###  [Click here to view the dataset](animal-data-1.csv)
 
 ##  Dataset Schema
 
@@ -55,7 +70,7 @@ R wa primarlity used in cleaning and manipulating the dataset
 | `isdoa`              | 1 if dead on arrival                                            |
 
 
-###  [Click here to view the dataset](animal-data-1.csv)
+
 
 ### Results
 
