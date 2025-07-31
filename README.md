@@ -74,23 +74,51 @@ R was primarlity used in cleaning and manipulating the dataset
 
 ### Results
 
+###  Return Reasons for Returned Pets
+![Return Reasons](return%20final.jpeg)
+
+Dogs surrendered due to housing issues or behavior problems had lower chances of successful adoption.
+
+Return rates were higher for dogs adopted without proper breed research or preparation.
+
 ###  Top 10 Adopted Dog Breeds
 ![Top 10 Adopted Dog Breeds](adopted%20dog%20breeds.jpeg)
 
 ###  Adoption Counts by Age
 ![Adoption Counts by Age](age%20counts.jpeg)
 
+
 ###  Decision Tree Model
 ![Decision Tree](tree.jpeg)
+Age
 
+Age was the strongest predictor of adoption.
+
+Puppies and young dogs were significantly more likely to be adopted quickly.
+
+Senior dogs were more likely to remain in shelters or face euthanasia due to limited interest
 ###  Random Forest Feature Importance
 ![Random Forest](random%20forest.jpeg)
 
 ###  ROC Curve
 ![ROC Curve](roc%20curve.jpeg)
 
-###  Return Reasons for Returned Pets
-![Return Reasons](return%20final.jpeg)
+Logistic Regression:
+
+Provided baseline prediction accuracy; age and breed were statistically significant.
+
+Decision Tree:
+
+Visualized decision paths showing how age and breed affect outcomes.
+
+Easily interpretable for non-technical audiences.
+
+Random Forest:
+
+Highest accuracy overall.
+
+Feature importance plot confirmed that age and breed were the top predictors.
+
 
 
 ### Adoption Likelihood by Gender
