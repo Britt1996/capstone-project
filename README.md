@@ -81,8 +81,10 @@ Dogs surrendered due to housing issues or behavior problems had lower chances of
 
 Return rates were higher for dogs adopted without proper breed research or preparation.
 
-###  Top 10 Adopted Dog Breeds
-![Top 10 Adopted Dog Breeds](adopted%20dog%20breeds.jpeg)
+###  Most Popular Dog Breeds in Shelter
+![Top Dog Breeds](top%20dog%20breeds.jpeg)
+
+The top breeds in shelters are ones with bad sterotypes or with dogs with high energy  as seen in the graph 
 
 ###  Adoption Counts by Age
 ![Adoption Counts by Age](age%20counts.jpeg)
@@ -94,35 +96,28 @@ Age
 
 Age was the strongest predictor of adoption.
 
-Puppies and young dogs were significantly more likely to be adopted quickly.
+Puppies and young dogs were significantly more likely to be adopted quickly. Dogs 3 years or older were less likly to be adopted and breed was not a factor.
+
 
 Senior dogs were more likely to remain in shelters or face euthanasia due to limited interest
 ###  Random Forest Feature Importance
 ![Random Forest](random%20forest.jpeg)
 
-###  ROC Curve
-![ROC Curve](roc%20curve.jpeg)
-
-Logistic Regression:
-
-Provided baseline prediction accuracy; age and breed were statistically significant.
-
-Decision Tree:
-
-Visualized decision paths showing how age and breed affect outcomes.
-
-Easily interpretable for non-technical audiences.
-
-Random Forest:
 
 Highest accuracy overall.
 
 Feature importance plot confirmed that age and breed were the top predictors.
 
+###  ROC Curve
+![ROC Curve](roc%20curve.jpeg)
+Logistic regression provided a baseline prediction model.
+
+Both age and breed were statistically significant predictors of adoption.
+
+ROC curve demonstrated the model’s ability to distinguish between adopted vs. non-adopted outcomes.
 
 
 ### Adoption Likelihood by Gender
 ![Adoption by Gender](gender.jpeg)
 
-###  Most Popular Dog Breeds in Shelter
-![Top Dog Breeds](top%20dog%20breeds.jpeg)
+
