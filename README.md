@@ -1,33 +1,33 @@
 #  Pet Adoption Analysis: Uncovering Patterns in Shelter Outcomes
 
-This project analyzes shelter animal intake and outcome data to identify the key factors that influence whether an animal gets adopted. Using logistic regression, decision trees, and random forest models, it reveals patterns that can help shelters improve adoption strategies and reduce return rates.
+This project analyzes shelter animal intake and outcome data to identify the key factors that influence whether an animal gets adopted. Using logistic regression, decision tree, and random forest models, it reveals patterns that can help shelters improve adoption strategies and reduce return rates.
 
 ---
 
-##  Project Summary
-
-Animal shelters face challenges with overcrowding, limited resources, and high return rates. This project explores patterns in adoption outcomes by analyzing structured data on animal characteristics, intake reasons, and movement types(adopted/ notadopted).
-
-In 2023 alone, California and Texas euthanized over 40,000 dogs due to high rates of animal surrender, overcrowded shelters, and insufficient funding, as seen in chart below:
+> In 2023 alone, **California and Texas euthanized over 40,000 dogs** due to high rates of animal surrender, overcrowded shelters, and insufficient funding (as shown in the chart below).
 
 ![Dog Euthanasia](dog%202023%20euthanased.jpeg)
 
-**Main Goals:**
-- Determine which features (age, breed, species, etc.) most influence adoption outcomes
-- Predict the likelihood of adoption using machine learning models
-- Provide actionable insights for shelters to optimize their adoption processes
+##  Main Goals
 
-  
+- Identify features (age, breed, species, etc.) that most influence adoption outcomes  
+- Predict the likelihood of adoption using machine learning models  
+- Provide actionable insights to help shelters optimize adoption processes  
+
+---
+
 ##  Project Overview
 
 - Focused on **dogs only**
-- Cleaned and preprocessed over 30,000 records
-- Explored variables like breed, age, sex, intake reason, and adoption outcome
-- Built predictive models (logistic regression, decision tree, random forest)
-- Created visualizations to communicate trends and actionable insights
+- Cleaned and preprocessed **30,000+ records**
+- Explored variables including **breed, age, sex, intake reason, and adoption outcome**
+- Built predictive models:  
+  - Logistic Regression  
+  - Decision Tree  
+  - Random Forest
+- Created visualizations to highlight trends and key findings
 
-
-
+---
 # Language 
 R was primarlity used in cleaning and manipulating the dataset
 
@@ -69,55 +69,68 @@ R was primarlity used in cleaning and manipulating the dataset
 | `puttosleep`         | 1 if euthanized                                                 |
 | `isdoa`              | 1 if dead on arrival                                            |
 
+---
+
+##  Interactive Shiny App
+
+Explore the interactive version of this project through the Shiny web application:
+
+ **[Click here to launch the app](https://britt1996.shinyapps.io/adoption_app_v2/)**
+
+This Shiny app allows users to:
+
+- View adoption likelihood by **age**, **breed**, and **gender**
+---
 
 
+### Results and Discussion:
 
-### Results
 
 ###  Return Reasons for Returned Pets
+
+- Dogs surrendered due to **housing issues** or **behavioral concerns** had lower chances of successful adoption.
+- Return rates were higher for dogs adopted **without proper breed research or preparation**.
+
 ![Return Reasons](return%20final.jpeg)
 
-Dogs surrendered due to housing issues or behavior problems had lower chances of successful adoption.
-
-Return rates were higher for dogs adopted without proper breed research or preparation.
 
 ###  Most Popular Dog Breeds in Shelter
+
+- The most common breeds were often **stigmatized breeds** or **high-energy dogs**.
 ![Top Dog Breeds](top%20dog%20breeds.jpeg)
 
-The top breeds in shelters are ones with bad sterotypes or with dogs with high energy  as seen in the graph 
-
 ###  Adoption Counts by Age
+- Adoption rates **decline with age**.
+- Puppies are adopted at significantly higher rates than older dogs.
 ![Adoption Counts by Age](age%20counts.jpeg)
 
 
 ###  Decision Tree Model
+- **Age** was the strongest predictor of adoption.
+- Dogs under 3 years old were adopted more quickly.
+- Breed had less impact than expected.
+- Senior dogs were more likely to remain in shelters or face euthanasia.
+- 
 ![Decision Tree](tree.jpeg)
-Age
 
-Age was the strongest predictor of adoption.
-
-Puppies and young dogs were significantly more likely to be adopted quickly. Dogs 3 years or older were less likly to be adopted and breed was not a factor.
-
-
-Senior dogs were more likely to remain in shelters or face euthanasia due to limited interest
 ###  Random Forest Feature Importance
+- Had the **highest accuracy** of all models.
+- Feature importance plot confirmed that **age** and **breed** were top predictors.
+  
 ![Random Forest](random%20forest.jpeg)
 
-
-Highest accuracy overall.
-
-Feature importance plot confirmed that age and breed were the top predictors.
-
 ###  ROC Curve
+- Logistic regression provided a solid **baseline prediction model**.
+- Both **age** and **breed** were statistically significant predictors.
+- ROC curve showed strong performance distinguishing adopted vs. non-adopted cases.
 ![ROC Curve](roc%20curve.jpeg)
-Logistic regression provided a baseline prediction model.
-
-Both age and breed were statistically significant predictors of adoption.
-
-ROC curve demonstrated the model’s ability to distinguish between adopted vs. non-adopted outcomes.
-
 
 ### Adoption Likelihood by Gender
+- Sex-based trends showed minor differences.
+- In some cases, **female dogs** were slightly more likely to be adopted.
 ![Adoption by Gender](gender.jpeg)
 
+## 📬 Contact
+
+For questions, feedback, or collaboration opportunities, feel free to connect with me via [GitHub](https://github.com/Britt1996).
 
