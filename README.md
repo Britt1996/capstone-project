@@ -130,7 +130,7 @@ This Shiny app allows users to:
 - In some cases, **female dogs** were slightly more likely to be adopted.
 ![Adoption by Gender](gender.jpeg)
 
-## 📬 Contact
+##  Contact
 
 For questions, feedback, or collaboration opportunities, feel free to connect with me via [GitHub](https://github.com/Britt1996).
 
